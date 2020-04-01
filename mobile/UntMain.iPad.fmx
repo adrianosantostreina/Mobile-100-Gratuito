@@ -1,0 +1,5 @@
+inherited FrmMain_iPad: TFrmMain_iPad
+  ClientHeight = 748
+  ClientWidth = 1024
+  DesignerMasterStyle = 3
+end

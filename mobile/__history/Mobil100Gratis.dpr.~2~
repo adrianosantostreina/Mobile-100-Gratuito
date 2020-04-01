@@ -1,0 +1,16 @@
+program Mobil100Gratis;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UntMain in 'UntMain.pas' {FrmMain},
+  UntBaseLista in 'UntBaseLista.pas' {FrmBaseLista};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmMain, FrmMain);
+  Application.CreateForm(TFrmBaseLista, FrmBaseLista);
+  Application.Run;
+end.
