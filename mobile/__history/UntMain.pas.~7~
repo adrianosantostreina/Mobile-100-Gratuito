@@ -1,0 +1,47 @@
+unit UntMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.TabControl,
+  FMX.Layouts, FMX.Edit;
+
+type
+  TFrmMain = class(TForm)
+    lytMain: TLayout;
+    tbcMain: TTabControl;
+    tbiLogin: TTabItem;
+    TabItem2: TTabItem;
+    lytNavegacao: TLayout;
+    toolLogin: TLayout;
+    recToolLogin: TRectangle;
+    lblTituloLogin: TLabel;
+    recBack: TRectangle;
+    lytBoxLogin: TLayout;
+    edtUsuario: TEdit;
+    edtSenha: TEdit;
+    Layout1: TLayout;
+    lblNaoTemCadastro: TLabel;
+    swtLembrarSenha: TSwitch;
+    lytBtnLogin: TLayout;
+    recBtnLogin: TRectangle;
+    lblBtnLogin: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmMain: TFrmMain;
+
+implementation
+
+uses
+  UntDM;
+
+{$R *.fmx}
+
+end.
