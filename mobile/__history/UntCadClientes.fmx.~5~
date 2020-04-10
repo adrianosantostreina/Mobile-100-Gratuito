@@ -1,0 +1,12 @@
+inherited FrmCadClientes: TFrmCadClientes
+  Caption = 'FrmBaseLista1'
+  DesignerMasterStyle = 3
+  inherited lytGeral: TLayout
+    inherited ToolBar1: TToolBar
+      inherited speBtnMenu: TSpeedButton [1]
+      end
+      inherited lblTitulo: TLabel [2]
+      end
+    end
+  end
+end

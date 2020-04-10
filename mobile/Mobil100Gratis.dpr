@@ -6,15 +6,14 @@ uses
   UntMain in 'UntMain.pas' {FrmMain},
   UntBaseLista in 'UntBaseLista.pas' {FrmBaseLista},
   UntDM in 'UntDM.pas' {DM: TDataModule},
-  UntCadClientes in 'UntCadClientes.pas' {FrmCadClientes};
+  UntCadClientes in 'UntCadClientes.pas' {FrmCadClientes},
+  Mobile100.Lib in 'utils\Mobile100.Lib.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TFrmMain, FrmMain);
-  Application.CreateForm(TFrmBaseLista, FrmBaseLista);
   Application.CreateForm(TDM, DM);
-  Application.CreateForm(TFrmCadClientes, FrmCadClientes);
   Application.Run;
 end.

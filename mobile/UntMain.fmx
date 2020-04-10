@@ -48,6 +48,8 @@ object FrmMain: TFrmMain
         StyleLookup = ''
         TabOrder = 0
         Text = 'Login'
+        ExplicitSize.cx = 190.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object toolLogin: TLayout
           Align = Top
           Size.Width = 380.000000000000000000
@@ -126,6 +128,9 @@ object FrmMain: TFrmMain
               IsChecked = False
               Position.X = 276.000000000000000000
               Position.Y = 6.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
               TabOrder = 1
             end
           end
@@ -166,6 +171,7 @@ object FrmMain: TFrmMain
                 Size.Width = 312.000000000000000000
                 Size.Height = 48.000000000000000000
                 Size.PlatformDefault = False
+                OnClick = speBtnLoginClick
               end
             end
           end
@@ -317,6 +323,8 @@ object FrmMain: TFrmMain
         StyleLookup = ''
         TabOrder = 0
         Text = 'Main'
+        ExplicitSize.cx = 190.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object lytNavegacao: TLayout
           Align = Contents
           Size.Width = 380.000000000000000000
@@ -326,5 +334,13 @@ object FrmMain: TFrmMain
         end
       end
     end
+  end
+  object mtvMenu: TMultiView
+    Mode = Drawer
+    Size.Width = 250.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
   end
 end

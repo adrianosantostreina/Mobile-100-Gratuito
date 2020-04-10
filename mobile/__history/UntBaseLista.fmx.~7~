@@ -1,0 +1,41 @@
+object FrmBaseLista: TFrmBaseLista
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lytGeral: TLayout
+    Align = Contents
+    Size.Width = 380.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 380.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle1: TRectangle
+        Align = Contents
+        Fill.Color = x96435BF7
+        Size.Width = 380.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object speBtnMenu: TSpeedButton
+        Align = Left
+        StyledSettings = [Family, Size, Style]
+        Size.Width = 73.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = '< Voltar'
+        TextSettings.FontColor = claWhite
+      end
+    end
+  end
+end

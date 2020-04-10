@@ -3,10 +3,25 @@ unit UntMain;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.TabControl,
-  FMX.Layouts, FMX.Edit;
+  FMX.Controls,
+  FMX.Controls.Presentation,
+  FMX.Dialogs,
+  FMX.Edit,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Layouts,
+  FMX.Objects,
+  FMX.StdCtrls,
+  FMX.TabControl,
+  FMX.Types,
+
+  System.Classes,
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Variants,
+
+  Mobile100.Lib, FMX.MultiView;
 
 type
   TFrmMain = class(TForm)
@@ -42,7 +57,9 @@ type
     Rectangle3: TRectangle;
     Label3: TLabel;
     SpeedButton3: TSpeedButton;
+    mtvMenu: TMultiView;
     procedure FormCreate(Sender: TObject);
+    procedure speBtnLoginClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,7 +72,8 @@ var
 implementation
 
 uses
-  UntDM;
+  UntDM,
+  UntCadClientes;
 
 {$R *.fmx}
 
@@ -63,6 +81,19 @@ procedure TFrmMain.FormCreate(Sender: TObject);
 begin
   tbcMain.TabPosition := TTabPosition.None;
   tbcMain.ActiveTab   := tbiLogin;
+
+  TLibrary.ActiveForm := nil;
+  TLibrary.MainMenu   := mtvMenu;
+  TLibrary.LayoutMain := lytNavegacao;
+
+  mtvMenu.HideMaster;
+end;
+
+procedure TFrmMain.speBtnLoginClick(Sender: TObject);
+begin
+  //Chamar o formulário de Clientes
+  TLibrary.OpenForm(TFrmCadClientes, nil);
+  tbcMain.Next();
 end;
 
 end.

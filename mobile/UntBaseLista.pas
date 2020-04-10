@@ -5,13 +5,15 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Layouts;
 
 type
   TFrmBaseLista = class(TForm)
-    Label1: TLabel;
     ToolBar1: TToolBar;
     Rectangle1: TRectangle;
+    lytGeral: TLayout;
+    speBtnMenu: TSpeedButton;
+    lblTitulo: TLabel;
   private
     { Private declarations }
   public

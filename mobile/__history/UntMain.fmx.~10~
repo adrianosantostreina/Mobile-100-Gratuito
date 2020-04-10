@@ -1,0 +1,337 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 570
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object lytMain: TLayout
+    Align = Contents
+    Size.Width = 380.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recBack: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 380.000000000000000000
+      Size.Height = 570.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object tbcMain: TTabControl
+      Align = Client
+      Size.Width = 380.000000000000000000
+      Size.Height = 570.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        380s
+        521s
+        380s
+        521s)
+      object tbiLogin: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 190.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Login'
+        ExplicitSize.cx = 190.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object toolLogin: TLayout
+          Align = Top
+          Size.Width = 380.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object recToolLogin: TRectangle
+            Align = Contents
+            Fill.Color = xFF394264
+            Size.Width = 380.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+          object lblTituloLogin: TLabel
+            Align = Contents
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 380.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Login'
+            TabOrder = 1
+          end
+        end
+        object lytBoxLogin: TLayout
+          Align = Top
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 58.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 199.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object edtUsuario: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Position.Y = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object edtSenha: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 1
+            Position.Y = 52.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Layout1: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 94.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 37.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object lblNaoTemCadastro: TLabel
+              Align = Client
+              Size.Width = 276.000000000000000000
+              Size.Height = 37.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Lembrar Senha'
+              TabOrder = 0
+            end
+            object swtLembrarSenha: TSwitch
+              Align = Right
+              IsChecked = False
+              Position.X = 276.000000000000000000
+              Position.Y = 6.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytBtnLogin: TLayout
+            Position.Y = 149.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object recBtnLogin: TRectangle
+              Align = Client
+              ClipChildren = True
+              Fill.Color = xB4394264
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 312.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 21.000000000000000000
+              YRadius = 21.000000000000000000
+              object lblBtnLogin: TLabel
+                Align = Client
+                StyledSettings = [Family, Style]
+                Size.Width = 312.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Entrar'
+                TabOrder = 0
+              end
+              object speBtnLogin: TSpeedButton
+                Align = Client
+                Size.Width = 312.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+        end
+        object lytLoginAlternativo: TLayout
+          Align = Bottom
+          Margins.Left = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 344.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 167.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lytBtnFacebook: TLayout
+            Align = Bottom
+            Position.Y = 117.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object Rectangle1: TRectangle
+              Align = Client
+              ClipChildren = True
+              Fill.Color = xB4001978
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 312.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 21.000000000000000000
+              YRadius = 21.000000000000000000
+              object Label1: TLabel
+                Align = Client
+                StyledSettings = [Family, Style]
+                Size.Width = 312.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Facebook'
+                TabOrder = 0
+              end
+              object SpeedButton1: TSpeedButton
+                Align = Client
+                Size.Width = 312.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object lytBtnGoogle: TLayout
+            Align = Bottom
+            Position.Y = 67.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object Rectangle2: TRectangle
+              Align = Client
+              ClipChildren = True
+              Fill.Color = xB4F82E04
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 312.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 21.000000000000000000
+              YRadius = 21.000000000000000000
+              object Label2: TLabel
+                Align = Client
+                StyledSettings = [Family, Style]
+                Size.Width = 312.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Google'
+                TabOrder = 0
+              end
+              object SpeedButton2: TSpeedButton
+                Align = Client
+                Size.Width = 312.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object lytEmail: TLayout
+            Align = Bottom
+            Position.Y = 17.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Rectangle3: TRectangle
+              Align = Client
+              ClipChildren = True
+              Fill.Color = xB4ADB6D6
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 312.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 21.000000000000000000
+              YRadius = 21.000000000000000000
+              object Label3: TLabel
+                Align = Client
+                StyledSettings = [Family, Style]
+                Size.Width = 312.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.FontColor = xFF394264
+                TextSettings.HorzAlign = Center
+                Text = 'Email'
+                TabOrder = 0
+              end
+              object SpeedButton3: TSpeedButton
+                Align = Client
+                Size.Width = 312.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 190.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Main'
+        ExplicitSize.cx = 190.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lytNavegacao: TLayout
+          Align = Contents
+          Size.Width = 380.000000000000000000
+          Size.Height = 521.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end

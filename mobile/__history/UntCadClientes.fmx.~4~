@@ -1,0 +1,10 @@
+inherited FrmCadClientes: TFrmCadClientes
+  Caption = 'FrmBaseLista1'
+  DesignerMasterStyle = 3
+  object Button1: TButton [0]
+    Position.X = 304.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 1
+    Text = 'Button1'
+  end
+end
